@@ -1,9 +1,15 @@
 #include <cstdio>
-#include "simple_obj.h"
+#include "Simple_obj.h"
 
 ///////////////////////////////////
 //       Methods definitions     //
 ///////////////////////////////////
+Simple_obj::Simple_obj()
+{
+	nb_vals = 0;
+	vals = NULL;
+}
+
 
 int Simple_obj::get_nb() const
 {

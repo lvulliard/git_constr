@@ -5,8 +5,8 @@
 class Simple_obj
 {
 public:
-	/*simple_obj(arguments);
-	~simple_obj();*/
+	Simple_obj();
+	/*~simple_obj();*/
 
 ///////////////////////////////////
 //       Methods declarations    //
@@ -16,7 +16,6 @@ public:
 
 	//Return the cardinal of our set
 	int get_nb() const;
-///////////////////////////////////
 
 	//Return the n-th value of our set
 	//n belongs to [0;nb_vals-1]
