@@ -10,6 +10,18 @@ Simple_obj::Simple_obj()
 	vals = NULL;
 }
 
+Simple_obj::Simple_obj(int val, const int* vals)
+{
+	nb_vals = val;
+	this->vals = vals;
+}
+
+/*Simple_obj::Simple_obj(const Simple_obj& old_obj)
+{
+	tab = new int[old_obj.nb_vals];
+	memcpy(tab, old_obj.vals, old_obj_nb_vals * sizeof(*tab));
+
+}*/
 
 int Simple_obj::get_nb() const
 {

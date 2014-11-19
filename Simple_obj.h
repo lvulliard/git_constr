@@ -6,6 +6,7 @@ class Simple_obj
 {
 public:
 	Simple_obj();
+	Simple_obj(int val, const int* vals);
 	/*~simple_obj();*/
 
 ///////////////////////////////////
