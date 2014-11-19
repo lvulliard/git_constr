@@ -12,12 +12,18 @@ public:
 //       Methods declarations    //
 ///////////////////////////////////
 
+	//GETTERS
+
 	//Return the cardinal of our set
-	int get_nb();
+	int get_nb() const;
+///////////////////////////////////
 
 	//Return the n-th value of our set
 	//n belongs to [0;nb_vals-1]
-	int get_val(int n);
+	int get_val(int n) const;
+
+	//Return the whole table
+	const int* get_vals() const;
 
 private:
 
@@ -26,7 +32,7 @@ private:
 ///////////////////////////////////
 
 	int nb_vals;
-	int* vals;
+	const int* vals;
 
 };
 
